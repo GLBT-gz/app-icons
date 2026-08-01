@@ -26,6 +26,7 @@
     { "name": "Word",            "category": "office",   "file": "word.ico",      "homepage": "https://www.microsoft.com/microsoft-365/word" },
     { "name": "Excel",           "category": "office",   "file": "excel.ico",     "homepage": "https://www.microsoft.com/microsoft-365/excel" },
     { "name": "PowerPoint",      "category": "office",   "file": "ppt.ico",       "homepage": "https://www.microsoft.com/microsoft-365/powerpoint" },
+    { "name": "Office Tool Plus","category": "office",   "file": "office-tool-plus.png", "homepage": "https://www.officetool.plus/zh-cn/" },
     { "name": "7-Zip",           "category": "tools",    "file": "7zip.png",      "homepage": "https://www.7-zip.org" },
     { "name": "Everything",      "category": "tools",    "file": "everything.ico","homepage": "https://www.voidtools.com" },
     { "name": "Snipaste",        "category": "tools",    "file": "snipaste.ico",  "homepage": "https://www.snipaste.com" },
@@ -39,6 +40,7 @@
     { "name": "PCL",             "category": "games",    "file": "pcl.png",       "homepage": "https://pcl2.cc/" },
     { "name": "FlClash",         "category": "network",  "file": "flclash.png",   "homepage": "https://github.com/chen08209/FlClash" },
     { "name": "UU加速器",         "category": "network",  "file": "uu-accelerator.png", "homepage": "https://uu.163.com/" },
+    { "name": "UU远程",           "category": "network",  "file": "uu-remote.png",  "homepage": "https://uuyc.163.com/" },
     { "name": "Clash for Windows", "category": "network", "file": "clash-for-windows.ico", "homepage": "https://github.com/Fndroid/clash_for_windows_pkg" },
     { "name": "命令行",          "category": "system",   "file": "cmd.ico",      "homepage": "https://learn.microsoft.com/windows-server/administration/windows-commands/cmd", "software": false }
   ]
