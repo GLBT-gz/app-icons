@@ -291,7 +291,9 @@ function extractExeIcons(exePath) {
   };
 
   const assembleIco = (groupData, icons) => {
-    const count = groupData.readUInt16LE(4);
+    // 部分 exe（如向日葵）的 RT_GROUP_ICON 声称的条目数超过实际数据长度，
+    // 以可容纳的条目数为准，避免越界。
+    const count = Math.min(groupData.readUInt16LE(4), Math.floor((groupData.length - 6) / 14));
     const items = [];
     for (let i = 0; i < count; i++) {
       const o = 6 + i * 14;
@@ -379,5 +381,6 @@ try {
   else usage();
 } catch (err) {
   console.error(`[error] ${err.message}`);
+  console.error(err.stack);
   process.exit(1);
 }
