@@ -18,15 +18,13 @@
     { "name": "Redis",           "category": "dev",      "file": "redis.ico" },
     { "name": "VMware",          "category": "dev",      "file": "vmware.ico" },
     { "name": "VirtualBox",      "category": "dev",      "file": "virtualbox.ico" },
-    { "name": "Adobe Photoshop", "category": "dev",      "file": "adobe-ps.ico" },
-    { "name": "PotPlayer",       "category": "media",    "file": "potplayer.ico" },
+    { "name": "PotPlayer",       "category": "media",    "file": "potplayer.png" },
     { "name": "网易云音乐",      "category": "media",    "file": "netease.ico" },
-    { "name": "Adobe Premiere",  "category": "media",    "file": "adobe-pr.ico" },
     { "name": "WPS Office",      "category": "office",   "file": "wps.ico" },
     { "name": "Word",            "category": "office",   "file": "word.ico" },
     { "name": "Excel",           "category": "office",   "file": "excel.ico" },
     { "name": "PowerPoint",      "category": "office",   "file": "ppt.ico" },
-    { "name": "7-Zip",           "category": "tools",    "file": "7zip.ico" },
+    { "name": "7-Zip",           "category": "tools",    "file": "7zip.png" },
     { "name": "Everything",      "category": "tools",    "file": "everything.ico" },
     { "name": "Snipaste",        "category": "tools",    "file": "snipaste.ico" },
     { "name": "uTools",          "category": "tools",    "file": "utools.ico" },
@@ -34,9 +32,8 @@
     { "name": "ContextMenuManager", "category": "tools", "file": "context-menu-manager.ico" },
     { "name": "PixPin",          "category": "tools",    "file": "pixpin.ico" },
     { "name": "迅雷",            "category": "tools",    "file": "xunlei.ico" },
-    { "name": "SpaceSniffer",    "category": "tools",    "file": "spacesniffer.ico" },
+    { "name": "SpaceSniffer",    "category": "tools",    "file": "spacesniffer.png" },
     { "name": "Clash for Windows", "category": "network", "file": "clash-for-windows.ico" },
-    { "name": "命令行",          "category": "system",   "file": "cmd.ico" },
-    { "name": "Linux",           "category": "system",   "file": "linux.ico" }
+    { "name": "命令行",          "category": "system",   "file": "cmd.ico" }
   ]
 }
