@@ -31,7 +31,7 @@
     { "name": "IObit Unlocker",  "category": "tools",    "file": "iobit-unlocker.ico" },
     { "name": "ContextMenuManager", "category": "tools", "file": "context-menu-manager.ico" },
     { "name": "PixPin",          "category": "tools",    "file": "pixpin.ico" },
-    { "name": "迅雷",            "category": "tools",    "file": "xunlei.ico" },
+    { "name": "迅雷",            "category": "tools",    "file": "xunlei.png" },
     { "name": "SpaceSniffer",    "category": "tools",    "file": "spacesniffer.png" },
     { "name": "Clash for Windows", "category": "network", "file": "clash-for-windows.ico" },
     { "name": "命令行",          "category": "system",   "file": "cmd.ico" }
