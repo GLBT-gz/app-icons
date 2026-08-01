@@ -1,10 +1,9 @@
 {
   "description": "软件图标库清单。archived/ 历史遗留不登记。",
   "icons": [
-    { "name": "Google Chrome",   "category": "browsers", "file": "chrome.png",    "homepage": "https://www.google.com/chrome/",   "desc": "谷歌浏览器" },
     { "name": "Microsoft Edge",  "category": "browsers", "file": "edge.svg",      "homepage": "https://www.microsoft.com/edge",    "desc": "微软浏览器" },
+    { "name": "Google Chrome",   "category": "browsers", "file": "chrome.png",    "homepage": "https://www.google.com/chrome/",   "desc": "谷歌浏览器" },
     { "name": "Firefox",         "category": "browsers", "file": "firefox.svg",   "homepage": "https://www.mozilla.org/firefox/",  "desc": "火狐浏览器" },
-    { "name": "Google",          "category": "browsers", "file": "google.ico",    "homepage": "https://www.google.com",            "desc": "谷歌搜索引擎", "software": false },
     { "name": "微信",            "category": "chat",     "file": "wechat.ico",    "homepage": "https://weixin.qq.com",             "desc": "即时通讯" },
     { "name": "TTime",           "category": "chat",     "file": "ttime.ico",     "homepage": "https://ttime.timerecord.cn/",      "desc": "免费翻译工具" },
     { "name": "VS Code",         "category": "dev",      "file": "vscode.svg",    "homepage": "https://code.visualstudio.com",     "desc": "代码编辑器" },
