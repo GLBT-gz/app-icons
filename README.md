@@ -1,6 +1,6 @@
 # app-icons
 
-软件图标库。独立于代码仓库，供各项目构建时作为 Vite `publicDir` 引用（如 900-优化 软件管理工具）。
+软件图标库。独立于代码仓库，供各项目通过 app-kit 的 `createViteConfig`（`extraPublicDirs` 选项）接入：构建时复制到 `dist/<前缀>`，开发时由 dev server 中间件提供静态服务。
 
 ## 目录结构
 
@@ -8,7 +8,7 @@
 app-icons/
 ├── README.md          本规范
 ├── index.json         图标清单（名称/分类/格式，供前端程序化读取）
-└── icons/             图标目录，作为 publicDir 引用后前端路径 = /icons/<分类>/<文件名>
+└── icons/             图标目录，接入后前端路径 = /icons/<分类>/<文件名>
     ├── browsers/      浏览器
     ├── dev/           开发工具
     ├── media/         影音播放
@@ -41,12 +41,12 @@ app-icons/
 
 ## 引用方式
 
-各项目在 `vite.config.ts` 中把本仓库加入 `extraPublicDirs`（app-kit 的 `createViteConfig` 选项），构建/开发时自动可用：
+各项目在 `vite.config.ts` 中通过 `extraPublicDirs` 接入本仓库的 `icons/` 目录（`src` 相对项目根目录，`prefix` 为访问前缀）：
 
 ```ts
 export default createViteConfig({
   port: 5180,
-  extraPublicDirs: ["../../../../app-icons"], // 相对项目根目录
+  extraPublicDirs: [{ src: "../../../app-icons/icons", prefix: "/icons" }],
 });
 ```
 
