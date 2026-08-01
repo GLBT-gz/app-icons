@@ -15,6 +15,7 @@
     { "name": "DBeaver",         "category": "dev", "sub": "db",  "file": "dbeaver.svg",   "homepage": "https://dbeaver.io",                "desc": "数据库管理" },
     { "name": "Redis",           "category": "dev", "sub": "db",  "file": "redis.ico",     "homepage": "https://redis.io",                  "desc": "内存数据库" },
     { "name": "PostgreSQL",      "category": "dev", "sub": "db",  "file": "postgresql.png","homepage": "https://www.postgresql.org/",       "desc": "关系型数据库" },
+    { "name": "MySQL",           "category": "dev", "sub": "db",  "file": "mysql.png",     "homepage": "https://www.mysql.com/",           "desc": "关系型数据库" },
     { "name": "Git",             "category": "dev", "sub": "git", "file": "git.png",       "homepage": "https://git-scm.com",               "desc": "版本控制工具" },
     { "name": "GitHub",          "category": "dev", "sub": "git", "file": "github.ico",    "homepage": "https://github.com",                "desc": "代码托管平台", "software": false },
     { "name": "Python",          "category": "dev", "sub": "env", "file": "python.png",    "homepage": "https://www.python.org/",           "desc": "编程语言环境" },
