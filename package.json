@@ -1,0 +1,13 @@
+{
+  "name": "app-icons",
+  "private": true,
+  "type": "module",
+  "description": "软件图标库 + 图标处理脚本",
+  "scripts": {
+    "icons:convert": "node scripts/icon-tool.mjs convert",
+    "icons:extract": "node scripts/icon-tool.mjs extract"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.3"
+  }
+}

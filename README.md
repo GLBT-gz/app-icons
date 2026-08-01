@@ -56,3 +56,44 @@ export default createViteConfig({
 /icons/browsers/chrome.png
 /icons/dev/visual-studio-code.png
 ```
+
+## 图标处理工具
+
+仓库内置 `scripts/icon-tool.mjs`（依赖 `sharp`），支持格式转换、尺寸调整、以及从 exe 提取全部尺寸图标（纯 Node 解析 PE 资源节，无额外系统依赖）。先安装依赖：
+
+```bash
+pnpm install
+```
+
+### convert：格式转换 + 尺寸调整
+
+格式由输出扩展名决定（png / jpg / webp / ico）。
+
+```bash
+# SVG 转 PNG，宽高 128
+pnpm icons:convert icons/browsers/edge.svg -o out/edge.png -s 128
+
+# PNG 转多分辨率 ICO（16/32/48/256）
+pnpm icons:convert icons/dev/vscode.svg -o out/vscode.ico -s 16,32,48,256
+
+# ICO 输入同样支持（取指定尺寸解码后输出）
+pnpm icons:convert out/vscode.ico -o out/vscode-128.png -s 128
+```
+
+### extract：从 exe 提取图标
+
+解析 PE 资源段（RT_GROUP_ICON / RT_ICON），提取 exe 内全部尺寸图标为多分辨率 `.ico`，可选输出 PNG。
+
+```bash
+# 提取全部尺寸为 ICO（默认输出到 exe 同目录）
+pnpm icons:extract C:\Path\to\app.exe
+
+# 指定输出 + 转 256px PNG
+pnpm icons:extract C:\Path\to\app.exe -o out/app.ico --png --size 256
+```
+
+说明：
+
+- exe 内图标可能是 PNG 或 DIB 存储，工具两者都能处理；DIB 支持 32/24/8 bpp（含 AND mask 透明通道）
+- Win11 的 UWP stub 类 exe（如 System32 的 notepad.exe）资源里可能没有图标，需提取 Store 包内真实 exe 或其他程序
+- 提取后建议用 `convert` 转 PNG 并按命名规范放入分类目录
