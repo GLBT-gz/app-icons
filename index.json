@@ -8,7 +8,7 @@
     { "name": "微信",            "category": "chat",     "file": "wechat.ico" },
     { "name": "TTime",           "category": "chat",     "file": "ttime.ico" },
     { "name": "VS Code",         "category": "dev",      "file": "vscode.svg" },
-    { "name": "Git",             "category": "dev",      "file": "git.svg" },
+    { "name": "Git",             "category": "dev",      "file": "git.png" },
     { "name": "DBeaver",         "category": "dev",      "file": "dbeaver.svg" },
     { "name": "GitHub",          "category": "dev",      "file": "github.ico", "homepage": "https://github.com", "software": false },
     { "name": "IntelliJ IDEA",   "category": "dev",      "file": "idea.ico" },
