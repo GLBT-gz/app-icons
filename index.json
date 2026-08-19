@@ -56,6 +56,7 @@
     { "name": "UU加速器",         "category": "games",    "file": "uu-accelerator.png", "homepage": "https://uu.163.com/",     "desc": "游戏加速器" },
     { "name": "FlClash",         "category": "network",  "file": "flclash.png",   "homepage": "https://github.com/chen08209/FlClash", "desc": "Clash 代理客户端" },
     { "name": "Clash for Windows", "category": "network", "file": "clash-for-windows.ico", "homepage": "https://github.com/Fndroid/clash_for_windows_pkg", "desc": "代理客户端" },
-    { "name": "命令行",          "category": "system",   "file": "cmd.ico",      "homepage": "https://learn.microsoft.com/windows-server/administration/windows-commands/cmd", "desc": "Windows 命令提示符", "software": false }
+    { "name": "命令行",          "category": "system",   "file": "cmd.ico",      "homepage": "https://learn.microsoft.com/windows-server/administration/windows-commands/cmd", "desc": "Windows 命令提示符", "software": false },
+    { "name": "查看进程",         "category": "system",   "file": "view-process.svg", "desc": "系统进程与资源占用查看", "software": false }
   ]
 }
